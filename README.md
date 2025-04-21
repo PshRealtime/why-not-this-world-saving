@@ -2,7 +2,7 @@
 
 ## 🌍 Motivation
 
-Hydrogen is essential for maintaining an industrialized society while mitigating climate change. Current large-scale hydrogen production methods rely on electricity and require vast areas of land—up to 300 square kilometers per facility. Moreover, scaling this to meet the needs of agriculture, aviation, shipping, and steel industries would demand thousands of such facilities.
+Hydrogen is essential for maintaining an industrialized society while mitigating climate change. Current large-scale hydrogen production attempts rely on electricity and require vast areas of land—up to 300 square kilometers per facility. Moreover, scaling this to meet the needs of agriculture, aviation, shipping, and steel industries would demand thousands of such facilities.
 
 These methods, based on electrolysis and renewable electricity, face several challenges:
 
@@ -42,3 +42,12 @@ This project is not intended to replace industrial hydrogen production. Instead,
 - Serve as a **proof of concept** for identifying novel catalytic cycles  
 - Provide a **framework or tool** for exploring chemical reaction paths using AI  
 - Demonstrate the **potential of LLMs** in supporting chemical innovation
+
+## 🧪 Code
+
+This project includes **two parallel implementations** of the core functionality:
+
+- 🦀 `rust/` — An implementation using Rust, along with the original Jupyter notebook prototype. The author likes to learn Rust and has a strong background in system programming, why it is used here.
+- 🐍 Root directory — A Python-based version of the notebook, adapted to align with specific project constraints.
+
+Both versions explore the same chemical logic but differ in language and execution strategy. The Python version is designed for easier experimentation and integration with AI models, while the Rust version emphasizes speed and scalability.
