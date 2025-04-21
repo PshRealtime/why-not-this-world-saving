@@ -47,7 +47,7 @@ This project is not intended to replace industrial hydrogen production. Instead,
 
 This project includes **two parallel implementations** of the core functionality:
 
-- 🦀 `rust/` — An implementation using Rust, along with the original Jupyter notebook prototype. The author likes to learn Rust and has a strong background in system programming, why it is used here.
+- 🦀 `rust/` — An implementation using Rust, along with the original Jupyter notebook prototype. The Rust version exists because the author has a strong background in systems programming and is also exploring Rust for performance and educational purposes.
 - 🐍 Root directory — A Python-based version of the notebook, adapted to align with specific project constraints.
 
-Both versions explore the same chemical logic but differ in language and execution strategy. The Python version is designed for easier experimentation and integration with AI models, while the Rust version emphasizes speed and scalability.
+Both versions explore the same chemical logic but differ in language and execution strategy.
