@@ -20,18 +20,16 @@ This project explores an alternative method: using **multistage catalytic reacti
 
 ### Key Hypothesis
 
-- If starting from water: **reduce the hydrogen binding energy** step by step  
-- If starting from molecular hydrogen: **increase the binding energy** step by step to form water  
+**reduce the hydrogen binding energy** step by step    
 
-The *(very likely unreachable)* goal is to identify catalytic reaction chains that form a closed loop, consuming water and heat while producing molecular hydrogen.
+The *(very likely unreachable)* goal is to identify catalytic reaction chains that form a closed loop, consuming water and heat while producing molecular hydrogen. The recent approach identifies different molecules with their hydrogen bounding energies. These molecules are seen as possible intermediate
+molecules in the reaction chain. Further some catalytic reaction from a molecule given bounding energy to molecule of a lower bounding energy is searched.
+The bounding energy should go to low, because the molecule should be stable at normal conditions.
 
 ## 🤖 Leveraging Language Models
 
-Large Language Models (LLMs) already demonstrate capabilities in chemical reasoning. This project leverages these models to:
-
-- Identify candidate molecules that may release hydrogen at ~250 °C  
-- Propose recycling steps for leftover molecules to regenerate prior reactants  
-- Develop multistage chemical reaction chains forming a closed catalytic cycle  
+Large Language Models (LLMs) already demonstrate capabilities in chemical reasoning. The LLM is used a knowledge base for the field of chemistry. It is used
+as tool to handle a large amount of knowledge required to create a large chemical reaction chain.
 
 In future stages, specialized AI tools like [ChemCrow](https://github.com/ur-whitelab/chemcrow-public) may be integrated for more precise modeling.
 
@@ -42,12 +40,3 @@ This project is not intended to replace industrial hydrogen production. Instead,
 - Serve as a **proof of concept** for identifying novel catalytic cycles  
 - Provide a **framework or tool** for exploring chemical reaction paths using AI  
 - Demonstrate the **potential of LLMs** in supporting chemical innovation
-
-## 🧪 Code
-
-This project includes **two parallel implementations** of the core functionality:
-
-- 🦀 `rust/` — An implementation using Rust, along with the original Jupyter notebook prototype. The Rust version exists because the author has a strong background in systems programming and is also exploring Rust for performance and educational purposes.
-- 🐍 Root directory — A Python-based version of the notebook, adapted to align with specific project constraints.
-
-Both versions explore the same chemical logic but differ in language and execution strategy.
